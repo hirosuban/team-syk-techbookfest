@@ -1,5 +1,15 @@
 # Re:VIEW Template
 
+## 執筆担当
+
+| 担当者 | 担当ファイル |
+| --- | --- |
+| yamane | [articles/yamane.re](articles/yamane.re) |
+| shimoji | [articles/shimoji.re](articles/shimoji.re) |
+| kai | [articles/kai.re](articles/kai.re) |
+
+はじめに（preface.re）とか締めの言葉とかは何もなければyamaneが書きます
+
 このリポジトリはRe:VIEW用の書籍テンプレートです。Re:VIEWバージョン5.9に対応します。
 メンテナンスはTechBoosterが行っています。
 
