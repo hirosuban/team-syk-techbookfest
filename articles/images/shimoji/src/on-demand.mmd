@@ -1,0 +1,12 @@
+sequenceDiagram
+  participant P as スマホ
+  participant S as 国内サーバー
+  participant C as カメラ
+  C-->>S: 常時接続で待機（撮影はしていない）
+  P->>S: ① 「見る」を押す
+  S->>C: ② 撮って
+  C->>S: ③ 映像を送る
+  S->>P: ④ 中継して表示
+  Note over S: 「録画」ボタンでサーバーに保存
+  P->>S: ⑤ 閉じる
+  S->>C: ⑥ 止めて（待機に戻る）

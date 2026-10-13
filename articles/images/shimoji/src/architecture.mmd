@@ -1,0 +1,5 @@
+flowchart LR
+  CAM["自作カメラ<br>XIAO ESP32S3 Sense"] -- "wss（暗号化）<br>カメラから接続" --> SV["国内VPS<br>Caddy + Node.js"]
+  VIEW["スマホ・PCの<br>ブラウザ"] -- "https / wss" --> SV
+  SV --> REC["録画ファイル<br>（VPS内に保存）"]
+  CAM -. "時刻合わせ" .-> NTP["ntp.nict.jp<br>（国内）"]
