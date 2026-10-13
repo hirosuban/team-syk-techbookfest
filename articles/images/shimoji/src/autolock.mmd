@@ -1,0 +1,7 @@
+flowchart LR
+  subgraph home["家の中（ルーター＝オートロック）"]
+    CAM["カメラ"]
+  end
+  SV["国内サーバー（家の外）"]
+  CAM -- "中から外：通れる" --> SV
+  SV -. "外から中：入れない ×" .-> CAM
