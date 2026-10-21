@@ -10,3 +10,5 @@ articles/*.html
 articles/*.xml
 articles/*.txt
 articles/_refiles/
+
+.DS_Store
