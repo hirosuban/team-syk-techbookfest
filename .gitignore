@@ -12,3 +12,5 @@ articles/*.txt
 articles/_refiles/
 
 .DS_Store
+
+.claude/settings.local.json
