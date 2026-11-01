@@ -14,14 +14,17 @@ yamane が担当するのは「ペーパードライバー、OBDに運転を採�
 
 ### 素材リポジトリの場所
 
-隣接する `../techbookfest21`（`/Users/my/Documents/workspace/techbookfest21`）。主な参照先:
+章の骨子（章立て・ページ配分）は**このリポジトリの [docs/yamane_outline.md](docs/yamane_outline.md)** に置く。
+**この章の構成の正本**で、骨子を書き換えるときはこのファイルを更新する（2026-11-01に素材リポジトリから移した）。
 
-- `docs/chapter_outline.md` … **章の骨子（章立て・ページ配分）。この章の構成の正本。**
-  パス・ファイル名は固定（向こうの CLAUDE.md で移動・改名・削除禁止と明記）。
+素材リポジトリは隣接する `../techbookfest21`（`/Users/my/Documents/workspace/techbookfest21`）。主な参照先:
+
 - `docs/obd2_csv.md` … OBD2の機材・接続手順・取得項目・記録前チェックリスト。
+- `docs/recording_test_plan.md` / `docs/recording_test_results.md` … 記録が止まる条件を確かめた
+  2026-10-31のテスト9本の手順と、結果・考察（6章「原因を実験で確かめる」の材料）。
 - `scripts/obd/*.py` … 図表を出す研究スクリプト（load_obd_log / gap_utils / plot_speed_over_time /
   plot_multi_metric / score_driving / mpl_ja）。
-- `obd_log/*.csv` … 実走行ログ（10/4・10/12・10/17×2・10/18）。
+- `obd_log/*.csv` … 実走行ログ（10/4〜10/31。10/31の夕方の分は記録テストのログ）。
 - `logs/YYYY-MM-DD.md` … 研究ログ（相関0.98などの根拠はここ）。
 
 ### Claude の役割分担（重要）
