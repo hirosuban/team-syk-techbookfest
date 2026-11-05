@@ -19,7 +19,7 @@ ZoomZoomハロー技術書典！@<fn>{zoom-zoom}どうもhirosubanです。
 
 OBD2は、クルマの状態を読み取るための規格です。いまのクルマの多くには専用のコネクタ（差込口）が付いていて@<fn>{obd2-kisei}、そこに市販のアダプターを挿すと、車速やエンジン回転数といった走行中のデータをスマホに取り込めます。難しい配線はいりません。
 
-//footnote[obd2-kisei][日本のOBDⅡ規制は、新型車には2008年（平成20年）10月から、生産を続けている車種には2010年（平成22年）9月から適用されている。国土交通省「OBD検査関係法令・通達集」（令和6年12月9日版）184ページ https://www.mlit.go.jp/jidosha/content/OBDkensa-regulations_set.pdf ]
+//footnote[obd2-kisei][日本のOBDⅡ規制は、新型車には2008年（平成20年）10月から、生産を続けている車種には2010年（平成22年）9月から適用されている。国土交通省「OBD検査関係法令・通達集」（令和6年12月9日版）184ページ @<href>{https://www.mlit.go.jp/jidosha/content/OBDkensa-regulations_set.pdf} ]
 
 さっそくアダプターを買い、意気揚々とデータを取り始めました。グラフにすれば自分の運転がまるっと見えるはず……と、そのときは軽く考えていました。
 
@@ -41,8 +41,8 @@ OBD2は、クルマの状態を読み取るための規格です。いまのク�
 つまり、アダプターを挿して記録すること自体は問題ありません。ただし、走りながらアプリの画面を見続けたり、iPhoneを手に取って操作したりすれば違反になります。アダプターやケーブルが、ペダルの操作のじゃまにならないようにも気をつけてください。iPhoneを操作するのは、走り出す前と、安全な場所に止まっているときだけにしましょう。筆者は法律の専門家ではないので、気になる方は条文や警察庁の案内を確かめてください。
 
 #@# 裏取り(2026-11-03): 第71条第5号の5・第70条の条文は e-Gov法令API(laws.e-gov.go.jp/api/1/articles;lawNum=昭和三十五年法律第百五号;article=71/70)で本文を確認。警察庁ページで「停止しているときを除き」「手で保持」「注視」を確認。「OBD2アダプターを禁じる規定が無い」は条文の検索で見つからなかったという意味(網羅確認ではない)。
-//footnote[law-dokoho][道路交通法（昭和35年法律第105号）（e-Gov法令検索） https://laws.e-gov.go.jp/law/335AC0000000105 ]
-//footnote[npa-keitai][警察庁「やめよう！運転中のスマートフォン・携帯電話等使用」 https://www.npa.go.jp/bureau/traffic/keitai/info.html ]
+//footnote[law-dokoho][道路交通法（昭和35年法律第105号）（e-Gov法令検索） @<href>{https://laws.e-gov.go.jp/law/335AC0000000105} ]
+//footnote[npa-keitai][警察庁「やめよう！運転中のスマートフォン・携帯電話等使用」 @<href>{https://www.npa.go.jp/bureau/traffic/keitai/info.html} ]
 
 
 == OBD2で走行データを取得するまで
@@ -86,11 +86,11 @@ matplotlib	3.11.2	グラフの描画
 
 OBD2は「On-Board Diagnostics 2」の略で、クルマに積まれた自己診断の仕組みです@<fn>{obd2}。もともとは排ガス規制への対応や故障診断のために生まれた規格で、整備工場が故障コードを読み出すときなどに使われてきました。
 
-//footnote[obd2][OBD2（On-Board Diagnostics II）は、クルマの排出ガス対策装置などの異常を車両自身が監視・記録し、スキャンツールで読み出せるようにした自己診断の規格。1996年以降にアメリカで販売される乗用車などへ搭載が義務づけられ、日本でも2008年10月以降の新型車に相当する装置（J-OBD2）が導入された。参考: SmartDrive Blog「OBD2とは」 https://blog.smartdrive.co.jp/obddevice-932d889c873c/ ]
+//footnote[obd2][OBD2（On-Board Diagnostics II）は、クルマの排出ガス対策装置などの異常を車両自身が監視・記録し、スキャンツールで読み出せるようにした自己診断の規格。1996年以降にアメリカで販売される乗用車などへ搭載が義務づけられ、日本でも2008年10月以降の新型車に相当する装置（J-OBD2）が導入された。参考: SmartDrive Blog「OBD2とは」 @<href>{https://blog.smartdrive.co.jp/obddevice-932d889c873c/} ]
 
 いまのクルマは、エンジンやブレーキ、エアバッグといった各部をECU@<fn>{ecu}と呼ばれる小型のコンピューターが制御しています。ECUは制御のために、車速やエンジン回転数、水温といった値を常に把握しています。OBD2は、このECUに「いまの車速は？」「エンジンの回転数は？」と問い合わせて、その値を読み出すための共通規格です。
 
-//footnote[ecu][ECUはElectronic Control Unit（電子制御ユニット）の略で、エンジンやブレーキなどを電子的に制御する車載の小型コンピューター。いまのクルマには100個以上積まれているといわれ、エンジンを制御するものはEngine Control Unitとも呼ばれる。参考: IT用語辞典 e-Words「ECU」 https://e-words.jp/w/ECU.html ]
+//footnote[ecu][ECUはElectronic Control Unit（電子制御ユニット）の略で、エンジンやブレーキなどを電子的に制御する車載の小型コンピューター。いまのクルマには100個以上積まれているといわれ、エンジンを制御するものはEngine Control Unitとも呼ばれる。参考: IT用語辞典 e-Words「ECU」 @<href>{https://e-words.jp/w/ECU.html} ]
 
 共通規格なので、メーカーや車種が違っても、同じ作法でデータを読み出せます。だから故障診断だけでなく、僕のように「自分の走行データを記録して眺めたい」という遊びにも使えるわけです。
 
@@ -103,13 +103,13 @@ OBD2は「On-Board Diagnostics 2」の略で、クルマに積まれた自己診
 
 (image) Veepeak OBDCheck BLE本体の写真（後で挿入）
 
-//footnote[veepeak][Veepeak OBDCheck BLE（公式製品ページ） https://veepeak.com/products/obdcheck-ble ]
+//footnote[veepeak][Veepeak OBDCheck BLE（公式製品ページ） @<href>{https://veepeak.com/products/obdcheck-ble} ]
 
 アプリは@<b>{Car Scanner ELM OBD2}@<fn>{carscanner}を使います。無料で始められて（アプリ内課金あり）、取得した走行データをCSVで書き出せるのが決め手でした。以降の章で眺めていくグラフは、すべてこのCSVから作っています。
 
 (image) App StoreのCar Scannerのページのスクリーンショット（後で挿入）
 
-//footnote[carscanner][Car Scanner ELM OBD2（公式サイト） https://www.carscanner.info/ ]
+//footnote[carscanner][Car Scanner ELM OBD2（公式サイト） @<href>{https://www.carscanner.info/} ]
 
 どちらも、たくさんの製品を厳密に比べて選んだわけではありません。とりあえず試して、問題なく使えたので、そのまま使っています。
 
@@ -140,7 +140,7 @@ OBD2は「On-Board Diagnostics 2」の略で、クルマに積まれた自己診
 最後に、使い終わったあとの注意を。メーカーのVeepeakは、1週間以上クルマに乗らないなら、アダプターをポートから抜いておくよう強く勧めています@<fn>{dark-current}。
 
 #@# 裏取り(2026-11-02 WebFetch): Veepeak公式FAQに「数日なら可、1週間以上乗らないなら抜くことを強く推奨」。公式に無い「暗電流」「バッテリー上がり」は書かない。
-//footnote[dark-current][Veepeak公式の製品ページのFAQ「Can I leave the device plugged in all the time?」では、バッテリーが古くなく頻繁に乗るなら数日は挿したままでよいが、1週間以上乗らないなら抜くことを強く勧めている。 https://veepeak.com/products/obdcheck-ble ]
+//footnote[dark-current][Veepeak公式の製品ページのFAQ「Can I leave the device plugged in all the time?」では、バッテリーが古くなく頻繁に乗るなら数日は挿したままでよいが、1週間以上乗らないなら抜くことを強く勧めている。 @<href>{https://veepeak.com/products/obdcheck-ble} ]
 
 
 === 記録したデータをCSVで取り出す
@@ -161,6 +161,7 @@ OBD2は「On-Board Diagnostics 2」の略で、クルマに積まれた自己診
 #@# 器(2026-11-02新設): 著者が地の文を書く。表は logs/2026-10-15・10-18・10-24・10-31・11-01.md と obd_log/ の時刻で裏取り済み。10/4の道は未確認→TODO(著者)。
 データは、2026年10月4日から10月31日までの約1か月、休日のドライブのたびに記録しました。この章に出てくるログは、次の7回ぶんです。表の「峠」は、峠道（長い登りと下りが続く、曲がりくねった山道のこと）を指します。この章では、まとめて「峠」と呼びます。
 
+//tsize[|latex||p{20mm}|p{50mm}|p{46mm}|]
 //table[yamane-drives][記録した日と走った道]{
 日付	走った道	記録の結果
 ------------------------------------------------------------
@@ -276,6 +277,7 @@ Car Scannerは、項目（PID。Parameter IDの略で、「エンジン回転数
 
 では、それぞれの項目は、何秒おきに記録されているのでしょうか。項目ごとに、値が入った行どうしの時刻の差を数えてみました。この章で使う3本のログについて、回転数・加速・車速の記録間隔を並べます。
 
+//tsize[|latex||p{12mm}|p{22mm}|p{22mm}|p{26mm}|p{26mm}|]
 //table[yamane-intervals][回転数・加速・車速の記録間隔]{
 ログ	間隔の中央値	間隔の90%点	1秒より長く空いた回数	1行に値が入る項目数（中央値）
 ------------------------------------------------------------
@@ -295,7 +297,7 @@ Car Scannerは、項目（PID。Parameter IDの略で、「エンジン回転数
 #@# 裏取り: ../techbookfest21 docs/requests/2026-11-03_record_intervals_result.md (scripts/obd/record_intervals.py)。10/17・10/18は最大ギャップ中点より前を捨てた区間、10/4は全体。「1秒より長く」は5秒超の途切れも含む。6章の0.061/0.346秒はテスト2・8の回転数(各1回)。
 
 #@# 裏取り(2026-11-02): 「順番に読む」はCar Scanner公式記事で確認。「答えた項目だけ行に書く」は公式に記述が無いので書かない。PIDの定義はWikipedia「OBD-II PIDs」(codes used to request data from a vehicle)。
-//footnote[cs-speed][Car Scanner公式の解説では、センサーは順番に読まれ、1項目の読み取りに100ミリ秒かかるなら4項目で400ミリ秒かかる、と説明されている。Car Scanner「Optimizing connection speed」 https://www.carscanner.info/optimizing-connection-speed/ ]
+//footnote[cs-speed][Car Scanner公式の解説では、センサーは順番に読まれ、1項目の読み取りに100ミリ秒かかるなら4項目で400ミリ秒かかる、と説明されている。Car Scanner「Optimizing connection speed」 @<href>{https://www.carscanner.info/optimizing-connection-speed/} ]
 
 だから、たとえば車速の推移を描きたいときは、テーブルをそのまま使うのではなく、車速の列に値がある行だけを抜き出します。pandasなら@<code>{dropna}で、指定した列が空の行を落とせます。
 
@@ -345,6 +347,7 @@ speed_df = df[["time", "自動車速度 (km/h)"]].dropna(subset=["自動車速�
 === 4つの失敗を並べる
 ここまでに出てきた失敗を、並べてみます。
 
+//tsize[|latex||p{26mm}|p{22mm}|p{28mm}|p{36mm}|]
 //table[yamane-losses][記録が欠けた4つの失敗]{
 日付	消えたもの	どのくらい	そのときの様子
 ------------------------------------------------------------
@@ -370,9 +373,9 @@ speed_df = df[["time", "自動車速度 (km/h)"]].dropna(subset=["自動車速�
 === 公式ドキュメントを読む：書いてあること・書いていないこと
 Car Scannerの公式ページ@<fn>{cs-rec}とFAQ@<fn>{cs-faq}、それにAppleのBluetoothの解説@<fn>{apple-ble}を読むと、いくつか分かったことがありました。
 
-//footnote[cs-rec][Car Scanner「Data recording」 https://www.carscanner.info/?p=188 ]
-//footnote[cs-faq][Car Scanner「FAQ」 https://www.carscanner.info/faq/ ]
-//footnote[apple-ble][Apple「Core Bluetooth Background Processing for iOS Apps」 https://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/CoreBluetooth_concepts/CoreBluetoothBackgroundProcessingForIOSApps/PerformingTasksWhileYourAppIsInTheBackground.html ]
+//footnote[cs-rec][Car Scanner「Data recording」 @<href>{https://www.carscanner.info/?p=188} ]
+//footnote[cs-faq][Car Scanner「FAQ」 @<href>{https://www.carscanner.info/faq/} ]
+//footnote[apple-ble][Apple「Core Bluetooth Background Processing for iOS Apps」 @<href>{https://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/CoreBluetooth_concepts/CoreBluetoothBackgroundProcessingForIOSApps/PerformingTasksWhileYourAppIsInTheBackground.html} ]
 
 まず、書いてあったことです。
 
@@ -406,7 +409,7 @@ Car Scannerの画面の名前を、先に整理しておきます（@<img>{carsc
 
 9本のテストの条件は、次のとおりです。どのテストも、iPhoneはホルダーに置いて充電し、自動ロックは3分のまま。「接続する」を押して「接続完了」になってから、iPhoneに触らずに約10分走り、安全な場所に止まってから「切断する」を押して、記録されたファイルを確かめました。
 
-//tsize[|latex||p{9mm}|p{24mm}|p{47mm}|p{40mm}|]
+//tsize[|latex||p{9mm}|p{22mm}|p{42mm}|p{39mm}|]
 //table[yamane-test-conditions][記録テスト9本の条件（2026-10-31）]{
 テスト	出しておいた画面	iPhoneの状態（走る前の操作）	確かめたかったこと
 ------------------------------------------------------------
@@ -436,7 +439,7 @@ Car Scannerの画面の名前を、先に整理しておきます（@<img>{carsc
 
 表の「クルマのデータ」は、記録されたCSVで、回転数・車速・冷却水温度の列に値が入っていた時間です。値が5秒より長く空いたところを「途切れ」と数えました。GPSは、GPSの速度の列を見ています。
 
-//tsize[|latex||p{24mm}|p{38mm}|p{30mm}|p{30mm}|]
+//tsize[|latex||p{26mm}|p{34mm}|p{26mm}|p{26mm}|]
 //table[yamane-tests][記録テスト9本の結果（2026-10-31）]{
 テスト	クルマのデータ	5秒を超える途切れ	GPS
 ------------------------------------------------------------
@@ -566,8 +569,8 @@ Car Scannerの画面の名前を、先に整理しておきます（@<img>{carsc
 
 どちらにしても、0回では区間ごとの差が出ず、採点になりません。そこでこの章では、0.15gを基準にします。1秒平均した加速が+0.15g以上を急加速、-0.15g以下を急ブレーキと数えました。
 
-//footnote[tesla-ss][Tesla「Safety Score」 https://www.tesla.com/support/safety-score ]
-//footnote[cr-tesla][Consumer Reports「Tesla's New 'Safety Score' Could Lead to Unsafe Driving, a CR Evaluation Shows」（2021年9月27日、10月25日更新） https://www.consumerreports.org/cars/car-safety/tesla-safety-score-could-lead-to-unsafe-driving-a3816355048/ ]
+//footnote[tesla-ss][Tesla「Safety Score」 @<href>{https://www.tesla.com/support/safety-score} ]
+//footnote[cr-tesla][Consumer Reports「Tesla's New 'Safety Score' Could Lead to Unsafe Driving, a CR Evaluation Shows」（2021年9月27日、10月25日更新） @<href>{https://www.consumerreports.org/cars/car-safety/tesla-safety-score-could-lead-to-unsafe-driving-a3816355048/} ]
 #@# 裏取り(2026-11-03): 0.3g=Teslaの基準、一時停止で超過、25mph→0で減点、0.5g超で「やや強い」はCR記事本文で確認。Tesla公式(support/safety-score)は自動取得が403のため著者がブラウザで開いて本文を確認(2026-11-03、v3.0の記述): 0.3g=6.7mph/秒、0.3g超の時間÷0.1g超の時間、TACC/Autosteer/FSD中は除外、目的に保険料。en_CA版とProgressive FAQは404。1秒平均の最大減速は logs/2026-10-18.md。
 
 しきい値をいくつか変えて数えてみると、回数が基準しだいで動くことが、よく分かります（score_driving.pyは0.10・0.15・0.20・0.30の4つで数えています）。
