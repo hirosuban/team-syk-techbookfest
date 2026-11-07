@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="500" viewBox="0 0 1000 500" role="img" aria-labelledby="title description">
+  <title id="title">髪にトーンを貼る前と後</title>
+  <desc id="description">同じ人物の線画を左右に並べた比較図。左は線画だけ、右は髪の範囲に網点のトーンを貼った状態。</desc>
+  <defs>
+    <pattern id="dots" width="12" height="12" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="2.4" fill="#222"/>
+      <circle cx="9" cy="9" r="2.4" fill="#222"/>
+    </pattern>
+    <path id="hair" d="M105 175 C96 123 130 79 185 73 C243 67 281 107 279 163 C279 188 269 217 257 235 L247 195 C231 182 223 166 219 149 C202 177 177 190 153 190 L139 224 C119 207 108 191 105 175 Z"/>
+    <g id="body" fill="#fff" stroke="#222" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M161 278 C126 285 106 302 91 334 L82 389 H303 L294 334 C281 302 260 285 229 278 Z"/>
+      <path d="M176 250 L176 285 Q194 305 212 285 L212 250 Z"/>
+      <path d="M151 171 C148 225 164 266 193 278 C225 271 249 231 250 181 C247 143 227 126 199 126 C171 126 153 140 151 171 Z"/>
+      <path d="M167 287 L194 317 L221 287 M194 317 L194 389" fill="none"/>
+      <path d="M133 304 L157 389 M254 304 L232 389" fill="none"/>
+    </g>
+    <g id="details" fill="none" stroke="#222" stroke-linecap="round" stroke-linejoin="round">
+      <use href="#hair" stroke-width="3.5"/>
+      <path d="M132 158 C151 137 158 113 158 99 M157 185 C184 170 204 149 211 111 M218 149 C239 135 249 113 249 102 M255 190 C267 164 268 139 264 125" stroke-width="2.5"/>
+      <path d="M166 209 Q179 204 190 210 M208 210 Q221 204 232 209 M176 213 L183 213 M216 213 L223 213 M198 217 Q194 230 198 234 M185 247 Q198 255 212 246" stroke-width="2.5"/>
+    </g>
+  </defs>
+
+  <rect width="1000" height="500" fill="#fff"/>
+  <text x="250" y="44" text-anchor="middle" font-family="Noto Sans CJK JP, IPA Gothic, sans-serif" font-size="26" font-weight="700" fill="#222">線画</text>
+  <text x="750" y="44" text-anchor="middle" font-family="Noto Sans CJK JP, IPA Gothic, sans-serif" font-size="26" font-weight="700" fill="#222">髪にトーンを貼った後</text>
+  <rect x="24" y="63" width="452" height="414" fill="#fff" stroke="#777" stroke-width="2"/>
+  <rect x="524" y="63" width="452" height="414" fill="#fff" stroke="#777" stroke-width="2"/>
+
+  <g transform="translate(50 75)">
+    <use href="#body"/>
+    <use href="#hair" fill="#fff"/>
+    <use href="#details"/>
+  </g>
+  <g transform="translate(550 75)">
+    <use href="#body"/>
+    <use href="#hair" fill="url(#dots)"/>
+    <use href="#details"/>
+  </g>
+</svg>
