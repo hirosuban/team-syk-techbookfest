@@ -40,5 +40,5 @@ Webサイトの運営者は、自分のサーバーや利用製品が影響を�
 
 ### 参考資料
 
-- IPA「PHPの脆弱性対策について（CVE-2026-109618、CVE-2026-109619：PHP2shell）」（2026年10月22日公開、10月27日更新） https://www.ipa.go.jp/security/security-alert/2026/alert20261022.html
-- Red Hat「RHSB-2026-013 Request handling memory corruption - php」（2026年10月21日公開） https://access.redhat.com/security/vulnerabilities/RHSB-2026-013
+- IPA「PHPの脆弱性対策について（CVE-2026-109618、CVE-2026-109619：PHP2shell）」（2026年10月22日公開、11月2日最終更新） https://www.ipa.go.jp/security/security-alert/2026/alert20261022.html
+- PHP「PHP Security Audit Results」（2026年10月21日公開） https://www.php.net/archive/2026.php#2026-10-21-5
