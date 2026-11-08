@@ -2,9 +2,9 @@ PREDEF:
   - preface.re
 
 CHAPS:
-  - yamane.re
   - shimoji.re
   - kai.re
+  - yamane.re
 
 APPENDIX:
 
