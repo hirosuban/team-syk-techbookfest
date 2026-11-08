@@ -22,10 +22,10 @@ bookname: ReVIEW-Template
 language: ja
 
 # 書名
-booktitle: {name: "Re:VIEWテンプレート", file-as: "reviewテンプレート"}
+booktitle: {name: "五反田TechBook vol.1", file-as: "ごたんだてっくぶっく"}
 
 # 著者名。「, 」で区切って複数指定できる
-aut: [{name: "TechBooster編", file-as: "techboosterヘン"}]
+aut: [{name: "SYK出版", file-as: "えすわいけーしゅっぱん"}]
 
 # 以下はオプション
 # 以下はオプション(autと同じように配列書式で複数指定可能)。
@@ -56,7 +56,7 @@ edt: ["mhidaka"]
 # a-oth, oth: その他
 # a-pht, pht: 撮影責任者
 # a-pbl, pbl: 出版社（発行所）
-pbl: TechBooster
+pbl: SYK出版
 # a-prt, prt: 印刷所
 # prt: TechBooster
 # a-red, red: 項目の枠組起草者
@@ -77,7 +77,7 @@ date: 2026-4-11
 history: [["2026-4-11 技術書典20版 v1.0.0"]]
 # 権利表記(配列で複数指定可)
 # rights: (C) 2016 Re:VIEW Developers
-rights: (C) 2017-2026 TechBooster
+rights: (C) 2026 SYK出版
 # description: 説明
 # subject: 短い説明用タグ(配列で複数指定可)
 # type: 書籍のカテゴリーなど(配列で複数指定可)
