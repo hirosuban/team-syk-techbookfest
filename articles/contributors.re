@@ -59,3 +59,34 @@
 //embed[latex]{
 \end{minipage}\par\medskip
 //}
+
+==== 第3章 山根 正大 / @hirosuban
+//embed[html]{
+<div style="display: flex; align-items: flex-start; gap: 1em;">
+<img src="images/contributors/profile-yamane.png" alt="山根 正大のプロフィール画像" style="width: 18%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 50%;" />
+<div style="flex: 1; min-width: 0;">
+//}
+//embed[markdown]{
+<img src="images/contributors/profile-yamane.png" alt="山根 正大のプロフィール画像" style="float: left; width: 18%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 50%; margin-right: 1em;" />
+//}
+//embed[latex]{
+\noindent\begin{minipage}[t]{0.18\linewidth}
+\vspace{0pt}\reviewprofilecircle{\linewidth}{images/contributors/profile-yamane.png}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.78\linewidth}\vspace{0pt}
+//}
+
+#@# 仮の文章(2026-11-09)。著者があとで書き直してからマージする。
+クルマと物理が好きな一般エンジニア。本業ではデータ分析に携わる。
+
+2026年にマツダのデミオを買ってから、運転とクルマにまつわるあらゆることが楽しくてたまらない。この章では、OBD2で取った自分の走行データを可視化した。
+
+//embed[html]{
+</div></div>
+//}
+//embed[markdown]{
+<div style="clear: both;"></div>
+//}
+//embed[latex]{
+\end{minipage}\par\medskip
+//}
