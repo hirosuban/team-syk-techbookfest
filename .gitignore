@@ -10,6 +10,8 @@ articles/*.html
 articles/*.xml
 articles/*.txt
 articles/_refiles/
+# review-pdfmaker --debug が残すビルドの作業フォルダ
+articles/ReVIEW-Template-pdf/
 
 .DS_Store
 
