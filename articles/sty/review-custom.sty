@@ -1,1 +1,19 @@
 % for user-defined macro
+\RequirePackage{tikz}
+
+% Crop a profile image to a circle without stretching a rectangular source.
+\newsavebox{\reviewprofileimagebox}
+\newcommand{\reviewprofilecircle}[2]{%
+  \begingroup
+  \sbox{\reviewprofileimagebox}{\includegraphics{#2}}%
+  \begin{tikzpicture}[x=#1,y=#1]
+    \path[use as bounding box] (0,0) rectangle (1,1);
+    \clip (0.5,0.5) circle[radius=0.5];
+    \ifdim\wd\reviewprofileimagebox>\ht\reviewprofileimagebox
+      \node[inner sep=0pt] at (0.5,0.5) {\includegraphics[height=#1]{#2}};
+    \else
+      \node[inner sep=0pt] at (0.5,0.5) {\includegraphics[width=#1]{#2}};
+    \fi
+  \end{tikzpicture}%
+  \endgroup
+}
