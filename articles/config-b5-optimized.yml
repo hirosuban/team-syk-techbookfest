@@ -1,0 +1,4 @@
+inherit: ["config.yml"]
+
+# B5 compact layout that preserves a 20 mm binding gutter and readable 9 pt body text.
+texdocumentclass: ["review-jsbook", "media=ebook,paper=b5,serial_pagination=true,openany,fontsize=9pt,baselineskip=12.3pt,line_length=47zw,number_of_lines=46,head_space=16mm,gutter=20mm,headsep=4mm,headheight=5mm,footskip=8mm"]
