@@ -59,3 +59,32 @@
 //embed[latex]{
 \end{minipage}\par\medskip
 //}
+
+==== 第3章 hirosuban(山根 正大) / Xアカウント:@hirosuban
+//embed[html]{
+<div style="display: flex; align-items: flex-start; gap: 1em;">
+<img src="images/contributors/profile-yamane.png" alt="山根 正大のプロフィール画像" style="width: 18%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 50%;" />
+<div style="flex: 1; min-width: 0;">
+//}
+//embed[markdown]{
+<img src="images/contributors/profile-yamane.png" alt="山根 正大のプロフィール画像" style="float: left; width: 18%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 50%; margin-right: 1em;" />
+//}
+//embed[latex]{
+\noindent\begin{minipage}[t]{0.18\linewidth}
+\vspace{0pt}\reviewprofilecircle{\linewidth}{images/contributors/profile-yamane.png}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.78\linewidth}\vspace{0pt}
+//}
+
+エンジニアとして、SIer→事業会社→事業会社と渡り歩いてきました。
+エンジニアリングに飽き足らず、PyConというカンファレンスの運営も2026年から始めたりしています。
+
+//embed[html]{
+</div></div>
+//}
+//embed[markdown]{
+<div style="clear: both;"></div>
+//}
+//embed[latex]{
+\end{minipage}\par\medskip
+//}
