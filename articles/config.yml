@@ -47,7 +47,7 @@ aut: [{name: "SYK出版", file-as: "えすわいけーしゅっぱん"}]
 # a-csl, csl: 監修者
 # a-dsr, dsr: デザイナ
 # a-edt, edt: 編集者
-dsr: ["hoge"]
+dsr: erika
 # a-ill, ill: イラストレータ
 # a-lyr, lyr: 歌詞作成者
 # a-mdc, mdc: メタデータセットの一次的責任者
