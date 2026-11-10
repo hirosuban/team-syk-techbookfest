@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1120" viewBox="0 0 800 1120" role="img" aria-labelledby="title description">
+  <title id="title">漫画原稿ができるまでの流れ</title>
+  <desc id="description">プロット、ネーム、下描き、ペン入れ、写植、仕上げ、完成原稿の順に、各工程の作業内容を示した図。本書で検証するトーン貼りを仕上げ工程内に示している。</desc>
+  <style>
+    text { font-family: "Noto Sans CJK JP", "IPA Gothic", sans-serif; }
+    .heading { fill: #223246; font-size: 34px; font-weight: 700; }
+    .subtitle { fill: #536579; font-size: 19px; }
+    .step-title { fill: #223246; font-size: 26px; font-weight: 700; }
+    .step-desc { fill: #43566b; font-size: 19px; }
+    .number { fill: #fff; font-size: 20px; font-weight: 700; text-anchor: middle; }
+    .note { fill: #596b7b; font-size: 17px; }
+  </style>
+
+  <rect width="800" height="1120" fill="#fff"/>
+  <rect x="43" y="43" width="8" height="74" rx="4" fill="#d36b43"/>
+  <text class="heading" x="73" y="77">漫画原稿ができるまで</text>
+  <text class="subtitle" x="74" y="114">作業の流れと、各工程で行うこと</text>
+
+  <path d="M82 227 V977" fill="none" stroke="#b8c7d4" stroke-width="3"/>
+  <path d="M75 284 L82 292 L89 284 M75 409 L82 417 L89 409 M75 534 L82 542 L89 534 M75 659 L82 667 L89 659 M75 784 L82 792 L89 784 M75 909 L82 917 L89 909" fill="none" stroke="#879aac" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="134" y="174" width="623" height="106" rx="16" fill="#f6f8fa" stroke="#d9e1e8" stroke-width="2"/>
+  <circle cx="82" cy="227" r="28" fill="#304b64"/>
+  <text class="number" x="82" y="234">1</text>
+  <text class="step-title" x="166" y="215">プロット</text>
+  <text class="step-desc" x="166" y="251">話の大筋と、登場人物の動きを考える</text>
+
+  <rect x="134" y="299" width="623" height="106" rx="16" fill="#f6f8fa" stroke="#d9e1e8" stroke-width="2"/>
+  <circle cx="82" cy="352" r="28" fill="#304b64"/>
+  <text class="number" x="82" y="359">2</text>
+  <text class="step-title" x="166" y="340">ネーム</text>
+  <text class="step-desc" x="166" y="376">ページとコマに分け、絵とセリフの配置を決める</text>
+
+  <rect x="134" y="424" width="623" height="106" rx="16" fill="#f6f8fa" stroke="#d9e1e8" stroke-width="2"/>
+  <circle cx="82" cy="477" r="28" fill="#304b64"/>
+  <text class="number" x="82" y="484">3</text>
+  <text class="step-title" x="166" y="465">下描き</text>
+  <text class="step-desc" x="166" y="501">人物や背景の形・位置を描き、清書の準備をする</text>
+
+  <rect x="134" y="549" width="623" height="106" rx="16" fill="#f6f8fa" stroke="#d9e1e8" stroke-width="2"/>
+  <circle cx="82" cy="602" r="28" fill="#304b64"/>
+  <text class="number" x="82" y="609">4</text>
+  <text class="step-title" x="166" y="590">ペン入れ</text>
+  <text class="step-desc" x="166" y="626">下描きをもとに主線や細部の線を描く</text>
+
+  <rect x="134" y="674" width="623" height="106" rx="16" fill="#f6f8fa" stroke="#d9e1e8" stroke-width="2"/>
+  <circle cx="82" cy="727" r="28" fill="#304b64"/>
+  <text class="number" x="82" y="734">5</text>
+  <text class="step-title" x="166" y="715">写植</text>
+  <text class="step-desc" x="166" y="751">フキダシなどに文字を入れ、読みやすさを確かめる</text>
+
+  <rect x="134" y="799" width="623" height="106" rx="16" fill="#fff5ef" stroke="#d36b43" stroke-width="2.5"/>
+  <circle cx="82" cy="852" r="28" fill="#ba5834"/>
+  <text class="number" x="82" y="859">6</text>
+  <text class="step-title" x="166" y="840">仕上げ</text>
+  <rect x="493" y="815" width="238" height="35" rx="17.5" fill="#f7d6c5"/>
+  <text x="612" y="839" fill="#883b22" font-size="16" font-weight="700" text-anchor="middle">本書の検証対象：トーン貼り</text>
+  <text class="step-desc" x="166" y="876">ベタで黒、ホワイトで修正、トーンで濃淡を加える</text>
+
+  <rect x="134" y="924" width="623" height="106" rx="16" fill="#f6f8fa" stroke="#d9e1e8" stroke-width="2"/>
+  <circle cx="82" cy="977" r="28" fill="#304b64"/>
+  <text class="number" x="82" y="984">7</text>
+  <text class="step-title" x="166" y="965">完成原稿</text>
+  <text class="step-desc" x="166" y="1001">絵と文字をそろえ、仕上がりを確認する</text>
+
+  <text class="note" x="43" y="1073">※ 工程の区切りや順番は制作者によって異なります。</text>
+  <text class="note" x="62" y="1099">写植と仕上げが前後することもあります。</text>
+</svg>
