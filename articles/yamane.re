@@ -119,7 +119,7 @@ OBD2は「On-Board Diagnostics 2」の略で、クルマに積まれた自己診
 
 ちなみに、クルマに取り付けるアダプター本体は、こういうやつです。
 
-//image[obd-adapter][Veepeak OBDCheck BLE+の本体。下側の口を、クルマのOBD2コネクタに挿す][scale=0.5]{
+//image[obd-adapter][Veepeak OBDCheck BLE+の本体。上側の口を、クルマのOBD2コネクタに挿す][scale=0.5]{
 //}
 
 #@# 裏取り(2026-11-14 ブラウザ): 写真のラベルは「OBDCheck BLE + plus」。公式ページの通信方式は「Bluetooth LE and Classic Bluetooth」、iOSとはBLEでつなぐ。「Bluetooth 4.0」はiOS端末側の条件だった。FAQ「plugged in all the time?」の答えは、11-02にBLEのページで確かめた内容と同じ。
