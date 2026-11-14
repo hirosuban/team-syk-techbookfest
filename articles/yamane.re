@@ -1,5 +1,9 @@
 = クルマのデータ、スマホで取れます@<embed>{|latex|\hspace{1zw\}}愛車のギアは今何速？
 
+//embed[latex]{
+\reviewchapterlead{愛車の走行データを取って、Pythonで可視化します。回転数 / 車速をギアとして、カタログ値と見比べてみたら、面白い結果になりました。}{images/contributors/profile-yamane.png}{hirosuban}
+//}
+
 #@# 器: 骨子 ../docs/yamane_outline.md に沿った見出しの器。節内の「(memo)」行は何を書くかの下書きメモ、「(image)」行はまだ挿入していない画像・図のプレースホルダで、どちらもPDFに出る(埋まったら消す)。#@# 行は最終PDFに出ないコメント(裏取り・内部参照など)。
 
 == はじめに
