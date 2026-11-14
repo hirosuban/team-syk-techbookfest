@@ -45,7 +45,7 @@ OBD2は、クルマの状態を読み取るための規格です。いまのク�
  * @<sec>{yamane-future}では、この章をまとめて、これからやりたいことを話します。
 
 === 免責事項
-この章の内容は、筆者のクルマ（2018年式のマツダ デミオ）と、Veepeak OBDCheck BLE、Car Scanner（iOS版）で試した結果です。ほかの車種・機材・アプリで同じように動くとは限りません。
+この章の内容は、筆者のクルマ（2018年式のマツダ デミオ）と、Veepeak OBDCheck BLE+、Car Scanner（iOS版）で試した結果です。ほかの車種・機材・アプリで同じように動くとは限りません。
 
 この章には、クルマにOBD2アダプターをつないで走る話が出てきますが、これは法律的には問題ないのでしょうか。筆者が調べた範囲では、OBD2アダプターを挿したまま走ることや、アプリで走行データを記録すること自体を禁じる規定は、道路交通法には見当たりませんでした@<fn>{law-dokoho}。道路交通法が運転中に禁じているのは、止まっているときを除いて、スマートフォンを手に持って通話することと、画面に表示された画像を注視することです（第71条第5号の5）@<fn>{npa-keitai}。また、運転者には、ハンドルやブレーキなどを確実に操作する義務があります（第70条）。
 
@@ -108,20 +108,22 @@ OBD2は「On-Board Diagnostics 2」の略で、クルマに積まれた自己診
 共通規格なので、メーカーや車種が違っても、同じ作法でデータを読み出せます。だから故障診断だけでなく、僕のように「自分の走行データを記録して眺めたい」という遊びにも使えるわけです。
 
 
-=== 機材とアプリ：Veepeak OBDCheck BLE＋Car Scanner
+=== 機材とアプリ：Veepeak OBDCheck BLE+とCar Scanner
 #@# Claudeによる本文のたたき台(2026-11-01)。著者が手で直す前提。事実: obd2_csv.md「1.」。
 データを取るために用意したのは、OBD2アダプターとiPhoneアプリの2つだけです。かかったお金は、アダプター代の@<b>{7,080円}だけでした。
 
-アダプターは@<b>{Veepeak OBDCheck BLE}@<fn>{veepeak}（Bluetooth 4.0 / BLE対応）を選びました（2026年10月4日に購入）。クルマのOBD2コネクタに挿し、iPhoneとはBluetoothでつなぎます。選んだ理由は2つあります。
+アダプターは@<b>{Veepeak OBDCheck BLE+}@<fn>{veepeak}（Bluetooth LE対応）を選びました（2026年10月4日に購入）。クルマのOBD2コネクタに挿し、iPhoneとはBluetoothでつなぎます。選んだ理由は2つあります。
 
  1. @<b>{多くのアプリに対応していそう}：Amazonで見つかったアダプターのなかで、対応アプリが多そうでした。もし1つのアプリでうまく記録できなくても、別のアプリを試せそうだと考えました。
  2. @<b>{接続の手順が明記されている}：手順が書いてあるので、作業の見通しが立てやすいと考えました。
 
 ちなみに、クルマに取り付けるアダプター本体は、こういうやつです。
 
-(image)
+//image[obd-adapter][Veepeak OBDCheck BLE+の本体。下側の口を、クルマのOBD2コネクタに挿す][scale=0.5]{
+//}
 
-//footnote[veepeak][Veepeak OBDCheck BLE（公式製品ページ） @<href>{https://veepeak.com/products/obdcheck-ble} ]
+#@# 裏取り(2026-11-14 ブラウザ): 写真のラベルは「OBDCheck BLE + plus」。公式ページの通信方式は「Bluetooth LE and Classic Bluetooth」、iOSとはBLEでつなぐ。「Bluetooth 4.0」はiOS端末側の条件だった。FAQ「plugged in all the time?」の答えは、11-02にBLEのページで確かめた内容と同じ。
+//footnote[veepeak][Veepeak OBDCheck BLE+ Plus（公式製品ページ） @<href>{https://veepeak.com/products/obdcheck-ble-plus} ]
 
 アプリは@<b>{Car Scanner ELM OBD2}@<fn>{carscanner}を使います。@<b>{無料のまま、取得した走行データをCSVで書き出せる}のが決め手でした（アプリ内課金もありますが、この章では使っていません）。以降の章で眺めていくグラフは、すべてこのCSVから作っています。
 
@@ -148,7 +150,7 @@ OBD2は「On-Board Diagnostics 2」の略で、クルマに積まれた自己診
 最後に、使い終わったあとの注意を。メーカーのVeepeakは、1週間以上クルマに乗らないなら、アダプターをポートから抜いておくよう強く勧めています@<fn>{dark-current}。
 
 #@# 裏取り(2026-11-02 WebFetch): Veepeak公式FAQに「数日なら可、1週間以上乗らないなら抜くことを強く推奨」。公式に無い「暗電流」「バッテリー上がり」は書かない。
-//footnote[dark-current][Veepeak公式の製品ページのFAQ「Can I leave the device plugged in all the time?」では、バッテリーが古くなく頻繁に乗るなら数日は挿したままでよいが、1週間以上乗らないなら抜くことを強く勧めている。 @<href>{https://veepeak.com/products/obdcheck-ble} ]
+//footnote[dark-current][Veepeak公式の製品ページのFAQ「Can I leave the device plugged in all the time?」では、バッテリーが古くなく頻繁に乗るなら数日は挿したままでよいが、1週間以上乗らないなら抜くことを強く勧めている。 @<href>{https://veepeak.com/products/obdcheck-ble-plus} ]
 
 
 === 記録したデータをCSVで取り出す
