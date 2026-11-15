@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="1120" viewBox="0 0 800 1120" role="img" aria-labelledby="title description">
   <title id="title">漫画原稿ができるまでの流れ</title>
-  <desc id="description">プロット、ネーム、下描き、ペン入れ、写植、仕上げ、完成原稿の順に、各工程の作業内容を示した図。本書で検証するトーン貼りを仕上げ工程内に示している。</desc>
+  <desc id="description">プロット、ネーム、下描き、ペン入れ、写植、仕上げ、完成原稿の順に、各工程の作業内容を示した図。本章で扱うトーン貼りとベタ塗りを仕上げ工程内に示している。</desc>
   <style>
     text { font-family: "Noto Sans CJK JP", "IPA Gothic", sans-serif; }
     .heading { fill: #2f2f2f; font-size: 34px; font-weight: 700; }
@@ -53,8 +53,8 @@
   <circle cx="82" cy="852" r="28" fill="#717171"/>
   <text class="number" x="82" y="859">6</text>
   <text class="step-title" x="166" y="840">仕上げ</text>
-  <rect x="493" y="815" width="238" height="35" rx="17.5" fill="#dedede"/>
-  <text x="612" y="839" fill="#4f4f4f" font-size="16" font-weight="700" text-anchor="middle">本書の検証対象：トーン貼り</text>
+  <rect x="393" y="815" width="338" height="35" rx="17.5" fill="#dedede"/>
+  <text x="562" y="839" fill="#4f4f4f" font-size="16" font-weight="700" text-anchor="middle">本章の対象：トーン貼り・ベタ塗り</text>
   <text class="step-desc" x="166" y="876">ベタで黒、ホワイトで修正、トーンで濃淡を加える</text>
 
   <rect x="134" y="924" width="623" height="106" rx="16" fill="#f8f8f8" stroke="#dfdfdf" stroke-width="2"/>
