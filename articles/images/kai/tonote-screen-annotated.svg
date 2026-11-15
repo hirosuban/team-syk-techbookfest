@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2000" height="2550" viewBox="0 0 2000 2550" role="img" aria-labelledby="title desc">
+  <title id="title">TONOTEの実画面と依頼・確認に使う5つの領域</title>
+  <desc id="desc">実際に開いているTONOTEを撮影した画面。原稿と完成見本を選択した依頼前の状態で、右側には貼付前の原稿が表示されている。番号は原稿入力、完成見本、見本からの依頼、文字と音声による指示、原稿と結果の表示切替に対応する。</desc>
+  <style>text { font-family: "Noto Sans CJK JP", sans-serif; fill: #222; } .heading { font-size: 55px; font-weight: 700; } .subheading { font-size: 32px; fill: #555; } .label-title { font-size: 42px; font-weight: 700; } .label-body { font-size: 40px; } .badge { font-size: 32px; font-weight: 700; text-anchor: middle; } .highlight { fill: none; stroke: #222; stroke-width: 4px; }</style>
+  <rect width="2000" height="2550" fill="white" />
+  <text x="70" y="90" class="heading">TONOTE：原稿と仕上げ方を伝える画面</text>
+  <text x="73" y="145" class="subheading">原稿と完成見本を選択した状態（AIへの依頼前）</text>
+  <clipPath id="screen-crop">
+    <rect x="70" y="195" width="1860" height="1729" />
+  </clipPath>
+  <g clip-path="url(#screen-crop)">
+    <image x="-139.04214559386975" y="-248.02681992337165" width="2275.7088122605364" height="2424.176245210728" xlink:href="tonote-screen-capture.png" />
+  </g>
+  <rect x="70" y="195" width="1860" height="1729" rx="8" fill="none" stroke="#bbb" stroke-width="2" />
+  <rect x="104.44444444444444" y="318.5249042145594" width="378.8888888888889" height="110.45977011494253" rx="8" class="highlight" />
+  <circle cx="86.62835249042146" cy="320.90038314176246" r="25" fill="white" stroke="#222" stroke-width="4" />
+  <text x="86.62835249042146" y="331.90038314176246" class="badge">1</text>
+  <rect x="104.44444444444444" y="451.55172413793105" width="378.8888888888889" height="377.7011494252874" rx="8" class="highlight" />
+  <circle cx="86.62835249042146" cy="453.9272030651341" r="25" fill="white" stroke="#222" stroke-width="4" />
+  <text x="86.62835249042146" y="464.9272030651341" class="badge">2</text>
+  <rect x="104.44444444444444" y="959.904214559387" width="230.42145593869733" height="51.0727969348659" rx="8" class="highlight" />
+  <circle cx="86.62835249042146" cy="959.904214559387" r="25" fill="white" stroke="#222" stroke-width="4" />
+  <text x="86.62835249042146" y="970.904214559387" class="badge">3</text>
+  <rect x="104.44444444444444" y="1078.6781609195402" width="378.8888888888889" height="326.6283524904215" rx="8" class="highlight" />
+  <circle cx="86.62835249042146" cy="1078.6781609195402" r="25" fill="white" stroke="#222" stroke-width="4" />
+  <text x="86.62835249042146" y="1089.6781609195402" class="badge">4</text>
+  <rect x="1710.2681992337166" y="252.01149425287355" width="184.09961685823754" height="100.95785440613027" rx="8" class="highlight" />
+  <circle cx="1692.4521072796936" cy="252.01149425287355" r="25" fill="white" stroke="#222" stroke-width="4" />
+  <text x="1692.4521072796936" y="263.01149425287355" class="badge">5</text>
+  <path d="M 70 1970 H 1930" stroke="#bbb" stroke-width="2" />
+  <circle cx="115" cy="2030" r="25" fill="white" stroke="#222" stroke-width="4" />
+  <text x="115" y="2041" class="badge">1</text>
+  <text x="160" y="2041" class="label-title">原稿を読み込む</text>
+  <text x="160" y="2096" class="label-body">トーンを貼る前の原稿を</text>
+  <text x="160" y="2144" class="label-body">指定する。</text>
+  <circle cx="1065" cy="2030" r="25" fill="white" stroke="#222" stroke-width="4" />
+  <text x="1065" y="2041" class="badge">2</text>
+  <text x="1110" y="2041" class="label-title">完成見本を添付する</text>
+  <text x="1110" y="2096" class="label-body">トーン済みのキャラクターを</text>
+  <text x="1110" y="2144" class="label-body">見本として渡す。</text>
+  <circle cx="115" cy="2210" r="25" fill="white" stroke="#222" stroke-width="4" />
+  <text x="115" y="2221" class="badge">3</text>
+  <text x="160" y="2221" class="label-title">見本から仕上げを頼む</text>
+  <text x="160" y="2276" class="label-body">AIが指示文を作り、そのまま</text>
+  <text x="160" y="2324" class="label-body">トーン貼りへ進む。</text>
+  <circle cx="1065" cy="2210" r="25" fill="white" stroke="#222" stroke-width="4" />
+  <text x="1065" y="2221" class="badge">4</text>
+  <text x="1110" y="2221" class="label-title">文字・音声で指示する</text>
+  <text x="1110" y="2276" class="label-body">仕上げ方や見本への補足を</text>
+  <text x="1110" y="2324" class="label-body">文字・音声で伝える。</text>
+  <circle cx="115" cy="2390" r="25" fill="white" stroke="#222" stroke-width="4" />
+  <text x="115" y="2401" class="badge">5</text>
+  <text x="160" y="2401" class="label-title">原稿と仕上がりを切り替える</text>
+  <text x="160" y="2456" class="label-body">生成後に「仕上げ」「比較」を選び、</text>
+  <text x="160" y="2504" class="label-body">原稿と結果を見比べる。</text>
+</svg>
