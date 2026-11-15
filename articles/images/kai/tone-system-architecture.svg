@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="680" viewBox="0 0 860 680" role="img" aria-labelledby="title desc">
+  <title id="title">トーン貼り補助システムの構成</title>
+  <desc id="desc">作者の画面、AIの作業制御、AIの作業画面、画像処理と作業データを手元のアプリに置く。作業制御が外部のCodexへ原稿と画面を渡し、判断と操作を受け取る。</desc>
+  <style>text { font-family: "Noto Sans CJK JP", sans-serif; fill: #222; text-anchor: middle; } .label { font-size: 17px; } .role { font-size: 21px; font-weight: 700; } .body { font-size: 18px; } .arrow { fill: none; stroke: #555; stroke-width: 1.8; marker-end: url(#arrow); } .both { marker-start: url(#arrow); }</style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#555" />
+    </marker>
+  </defs>
+  <rect width="860" height="680" fill="white" />
+  <rect x="20" y="105" width="540" height="550" rx="12" fill="#f5f5f5" stroke="#999" stroke-width="1.6" />
+  <text x="40" y="131" class="label" style="text-anchor: start">手元のアプリ</text>
+  <rect x="140" y="15" width="300" height="55" rx="8" fill="#e7e7e7" stroke="#777" stroke-width="1.6" />
+  <text x="290.0" y="49.5" class="role">作者</text>
+  <rect x="65" y="150" width="450" height="75" rx="8" fill="white" stroke="#777" stroke-width="1.6" />
+  <text x="290.0" y="179" class="role">作者の画面</text>
+  <text x="290.0" y="207" class="body">原稿・指示の入力と仕上がりの表示</text>
+  <rect x="105" y="285" width="370" height="75" rx="8" fill="white" stroke="#777" stroke-width="1.6" />
+  <text x="290.0" y="314" class="role">AIの作業制御</text>
+  <text x="290.0" y="342" class="body">指示と操作、確認の進行を管理</text>
+  <rect x="65" y="420" width="450" height="75" rx="8" fill="white" stroke="#777" stroke-width="1.6" />
+  <text x="290.0" y="449" class="role">AIの作業画面</text>
+  <text x="290.0" y="477" class="body">対象の指定・マスク確認・生成</text>
+  <rect x="65" y="555" width="260" height="75" rx="8" fill="white" stroke="#777" stroke-width="1.6" />
+  <text x="195.0" y="584" class="role">画像処理</text>
+  <text x="195.0" y="612" class="body">マスクとトーンを作成</text>
+  <rect x="375" y="555" width="140" height="75" rx="8" fill="white" stroke="#777" stroke-width="1.6" />
+  <text x="445.0" y="584" class="role">作業データ</text>
+  <text x="445.0" y="612" class="body">原稿・結果</text>
+  <rect x="615" y="285" width="220" height="100" rx="8" fill="#e7e7e7" stroke="#777" stroke-width="1.6" />
+  <text x="725.0" y="314" class="role">生成AI</text>
+  <text x="725.0" y="342" class="body">Codex</text>
+  <text x="725" y="411" class="label">画像の解釈・操作の判断</text>
+  <path d="M 290 72 V 148" class="arrow both" />
+  <text x="410" y="98" class="label">原稿・指示／結果</text>
+  <path d="M 290 227 V 283" class="arrow both" />
+  <text x="392" y="262" class="label">依頼／進行状況</text>
+  <path d="M 290 362 V 418" class="arrow both" />
+  <text x="400" y="398" class="label">操作／画面画像</text>
+  <path d="M 195 497 V 553" class="arrow both" />
+  <text x="349" y="534" class="label">範囲指定／処理結果</text>
+  <path d="M 327 592 H 373" class="arrow both" />
+  <path d="M 477 322 H 613" class="arrow both" />
+</svg>

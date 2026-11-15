@@ -1,48 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="600" height="730" viewBox="0 0 600 730" role="img" aria-labelledby="title desc">
-  <title id="title">TONOTEのトーン貼り処理フロー</title>
-  <desc id="desc">作者が原稿と文章指示を渡し、Codexが指定と確認を行い、ローカル画像処理がマスクとトーンを生成する。作者は比較して修正を依頼し、結果を保存する。</desc>
-  <style>text{font-family:"Noto Sans CJK JP",sans-serif;fill:#111;text-anchor:middle} .role{font-size:16px;font-weight:bold} .body{font-size:18px} .arrow{fill:none;stroke:#444;stroke-width:1.6;marker-end:url(#arrow)}</style>
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="405" viewBox="0 0 620 405" role="img" aria-labelledby="title desc">
+  <title id="title">システムを利用するときの流れ</title>
+  <desc id="desc">作者が原稿と仕上げ指示を渡し、システムが仕上げ案を作る。作者が原稿と比較し、修正が必要なら追加の指示を返す。採用した仕上がりを制作ソフトへ戻す。</desc>
+  <style>text { font-family: "Noto Sans CJK JP", sans-serif; fill: #222; text-anchor: middle; } .label { font-size: 17px; } .role { font-size: 21px; font-weight: 700; } .body { font-size: 18px; } .arrow { fill: none; stroke: #555; stroke-width: 1.8; marker-end: url(#arrow); } .both { marker-start: url(#arrow); }</style>
   <defs>
     <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-      <path d="M 0 0 L 10 5 L 0 10 z" fill="#444" />
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#555" />
     </marker>
   </defs>
-  <rect width="600" height="730" fill="white" />
-  <rect x="30" y="12" width="480" height="66" rx="5" fill="#f1f1f1" stroke="#555" stroke-width="1.2" />
-  <text x="270" y="36" class="role">作者</text>
-  <text x="270" y="62" class="body">原稿と文章の指示を渡す</text>
-  <path d="M 270 78 V 100" class="arrow" />
-  <rect x="30" y="102" width="480" height="66" rx="5" fill="#fff" stroke="#555" stroke-width="1.2" />
-  <text x="270" y="126" class="role">Codex</text>
-  <text x="270" y="152" class="body">対象範囲とトーンを作業画面で指定</text>
-  <path d="M 270 168 V 190" class="arrow" />
-  <rect x="30" y="192" width="480" height="66" rx="5" fill="#e4e4e4" stroke="#555" stroke-width="1.2" />
-  <text x="270" y="216" class="role">ローカル画像処理</text>
-  <text x="270" y="242" class="body">原稿線と指定からマスクを作成</text>
-  <path d="M 270 258 V 280" class="arrow" />
-  <rect x="30" y="282" width="480" height="66" rx="5" fill="#fff" stroke="#555" stroke-width="1.2" />
-  <text x="270" y="306" class="role">Codex</text>
-  <text x="270" y="332" class="body">マスクを表示・確認し、採用</text>
-  <path d="M 270 348 V 370" class="arrow" />
-  <rect x="30" y="372" width="480" height="66" rx="5" fill="#e4e4e4" stroke="#555" stroke-width="1.2" />
-  <text x="270" y="396" class="role">ローカル画像処理</text>
-  <text x="270" y="422" class="body">確認済みマスクに網点・ベタを生成</text>
-  <path d="M 270 438 V 460" class="arrow" />
-  <rect x="30" y="462" width="480" height="66" rx="5" fill="#fff" stroke="#555" stroke-width="1.2" />
-  <text x="270" y="486" class="role">Codex</text>
-  <text x="270" y="512" class="body">仕上がりを拡大して確認</text>
-  <path d="M 270 528 V 550" class="arrow" />
-  <rect x="30" y="552" width="480" height="66" rx="5" fill="#f1f1f1" stroke="#555" stroke-width="1.2" />
-  <text x="270" y="576" class="role">作者</text>
-  <text x="270" y="602" class="body">原稿と比較し、必要なら修正を依頼</text>
-  <path d="M 270 618 V 640" class="arrow" />
-  <rect x="30" y="642" width="480" height="66" rx="5" fill="#f1f1f1" stroke="#555" stroke-width="1.2" />
-  <text x="270" y="666" class="role">出力</text>
-  <text x="270" y="692" class="body">PNG・レイヤー付きPSDなどを保存</text>
-  <path d="M 510 585 H 560 V 135 H 512" class="arrow" stroke-dasharray="5 4" />
-  <rect x="542" y="317" width="36" height="86" fill="white" />
-  <text x="560" y="336" font-size="16">修</text>
-  <text x="560" y="357" font-size="16">正</text>
-  <text x="560" y="378" font-size="16">指</text>
-  <text x="560" y="399" font-size="16">示</text>
+  <rect width="620" height="405" fill="white" />
+  <rect x="25" y="15" width="470" height="72" rx="8" fill="#eee" stroke="#777" stroke-width="1.6" />
+  <text x="260.0" y="44" class="role">作者</text>
+  <text x="260.0" y="72" class="body">原稿と仕上げの指示を渡す</text>
+  <path d="M 260 89 V 113" class="arrow" />
+  <rect x="25" y="115" width="470" height="72" rx="8" fill="white" stroke="#777" stroke-width="1.6" />
+  <text x="260.0" y="144" class="role">システム</text>
+  <text x="260.0" y="172" class="body">指示に沿って仕上げ案を作る</text>
+  <path d="M 260 189 V 213" class="arrow" />
+  <rect x="25" y="215" width="470" height="72" rx="8" fill="#eee" stroke="#777" stroke-width="1.6" />
+  <text x="260.0" y="244" class="role">作者</text>
+  <text x="260.0" y="272" class="body">原稿と仕上がりを見比べる</text>
+  <path d="M 260 289 V 313" class="arrow" />
+  <rect x="25" y="315" width="470" height="72" rx="8" fill="#eee" stroke="#777" stroke-width="1.6" />
+  <text x="260.0" y="344" class="role">制作へ戻す</text>
+  <text x="260.0" y="372" class="body">採用した仕上がりを制作ソフトへ</text>
+  <path d="M 497 251 H 605 V 151 H 497" class="arrow" stroke-dasharray="6 4" />
+  <text x="556" y="190" class="label">修正の</text>
+  <text x="556" y="214" class="label">追加指示</text>
 </svg>

@@ -1,6 +1,7 @@
 node_modules/
 Gemfile.lock
 *.pdf
+!articles/images/latex/kai/tone-system-architecture.pdf
 .sass-cache/
 
 articles/*.pdf
