@@ -2,7 +2,7 @@
 
 #@# 章の入り口（2026-11-14 yamaneが参考書籍に合わせて追加）。キャッチはたたき台なので、下地さんに確認・書き換えてもらう。
 //embed[latex]{
-\reviewchapterlead{PdMが、非エンジニア向けに身近なたとえでネットとセキュリティを解きほぐします。}{images/contributors/profile-shimoji.png}{下地 未來}
+\reviewchapterlead{なぜ個人情報の流出は後を絶たないのか？普段何気なく使うインターネットの仕組みからサイバー攻撃の手口まで、非エンジニア目線でひも解き、今日からできるセキュリティ対策を紹介します。}{images/contributors/profile-shimoji.png}{下地 未來}
 //}
 
 == はじめに
