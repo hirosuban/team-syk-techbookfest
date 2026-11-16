@@ -17,3 +17,17 @@
   \end{tikzpicture}%
   \endgroup
 }
+
+% Chapter lead: a bold catch line, the author's round icon and byline, then a rule.
+% #1 = catch line, #2 = icon image path, #3 = byline
+\newcommand{\reviewchapterlead}[3]{%
+  \par\noindent
+  \begin{minipage}[b]{0.82\linewidth}%
+    {\bfseries #1}\par\vspace{1.0\baselineskip}%
+    \hfill{\small #3}%
+  \end{minipage}\hfill
+  \begin{minipage}[b]{0.13\linewidth}%
+    \reviewprofilecircle{\linewidth}{#2}%
+  \end{minipage}%
+  \par\vspace{4pt}\noindent\rule{\linewidth}{0.6pt}\par\bigskip
+}
