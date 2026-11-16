@@ -1,0 +1,35 @@
+{
+  "sources": [
+    {
+      "filename": "コミック 20261112.png",
+      "sha256": "b6a2ece8be03a725006dd8d28fc60d606376a52bb8b766b29f65a2b6bb03ea1c",
+      "size": [
+        4299,
+        6071
+      ],
+      "label": "線画"
+    },
+    {
+      "filename": "トーン検証用_見本原稿.png",
+      "sha256": "3fe4831abab41935bf8cafe2e5ea517bfea5a5a0339b80ce29482a3e5f5b9059",
+      "size": [
+        4299,
+        6071
+      ],
+      "label": "髪にトーンを貼った後"
+    }
+  ],
+  "crop_xywh": [
+    1620,
+    1080,
+    1010,
+    1180
+  ],
+  "retouched": false,
+  "layout": "Matching crops, left: line art; right: finished reference.",
+  "outputs": [
+    "articles/images/kai/tone-before-after.svg",
+    "articles/images/kai/tone-before-after.png",
+    "articles/images/latex/kai/tone-before-after.pdf"
+  ]
+}
