@@ -14,3 +14,15 @@ inherit: ["config.yml"]
 # texdocumentclass: ["review-jsbook", "media=ebook,paper=b5,serial_pagination=true,openany,fontsize=10pt,baselineskip=15.4pt,line_length=40zw,number_of_lines=35,head_space=30mm,headsep=10mm,headheight=5mm,footskip=10mm"]
 # A5の設定(9pt 38文字×37行) - 電子版
 texdocumentclass: ["review-jsbook", "media=ebook,paper=a5,serial_pagination=true,openany,fontsize=9pt,baselineskip=13pt,line_length=38zw,number_of_lines=37,head_space=15mm,headsep=3mm,headheight=5mm,footskip=10mm"]
+
+# 電子版のファイル名。印刷用（config.ymlのbookname: gotanda_techbook_vol1_print）と分けて、
+# 入稿用PDFを上書きしないようにする
+bookname: gotanda_techbook_vol1_ebook
+
+# 電子版の表紙（表1だけ。A5の縦横比、塗り足しなし）。画像はimages/から探索される
+pdfmaker:
+  coverimage: cover-ebook.png
+
+techbooster:
+  # 表紙を仕上がりサイズ（A5）に合わせて貼る
+  cover_fit_page: true
