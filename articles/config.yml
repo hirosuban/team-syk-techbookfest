@@ -16,8 +16,8 @@ review_version: 5.0
 # 同様にA.yml、B.yml内でさらにinherit:パラメータを使うこともできる。
 # inherit: ["A.yml", "B.yml"]
 
-# ブック名(ファイル名になるもの。ASCII範囲の文字を使用)
-bookname: ReVIEW-Template
+# ブック名(ファイル名になるもの。ASCII範囲の文字を使用)。印刷用（入稿用）のPDF名。電子版はconfig-ebook.ymlで上書きしている
+bookname: gotanda_techbook_vol1_print
 # 記述言語。省略した場合はja
 language: ja
 
